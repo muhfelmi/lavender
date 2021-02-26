@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="144dp"
-        android:layout_height="30dp"
+        android:layout_height="0dp"
         android:layout_marginTop="60dp"
         android:gravity="center"
         android:text="@string/login_page"
@@ -51,11 +51,11 @@
         android:layout_marginTop="276dp"
         android:ems="10"
         android:hint="@string/username"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView2"
