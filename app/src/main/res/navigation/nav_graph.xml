@@ -25,4 +25,24 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/LoginActivity"
+        android:name="com.ifelz.lavender.LoginActivity"
+        android:label="@string/login_activity"
+        tools:layout="@layout/activity_login">
+
+        <action
+            android:id="@+id/action_ActivityLogin_to_Dashboard"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Dashboard"
+        android:name="com.ifelz.lavender.Dashboard"
+        android:label="@string/dashboard_activity"
+        tools:layout="@layout/activity_dashboard">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 </navigation>
