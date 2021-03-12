@@ -79,7 +79,7 @@
         android:layout_height="match_parent"
         android:padding="7dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/item_view">
+        tools:listitem="@layout/recycler_view_item">
 
     </androidx.recyclerview.widget.RecyclerView>
 
