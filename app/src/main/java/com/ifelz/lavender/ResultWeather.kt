@@ -1,6 +1,7 @@
 package com.ifelz.lavender
 
 import com.google.gson.annotations.SerializedName
+import javax.annotation.Generated
 
 data class ResultWeather(
 
