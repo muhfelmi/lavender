@@ -31,7 +31,14 @@ class Dashboard : AppCompatActivity() {
                 text_temp_min_max.text = item?.list?.get(0)?.main?.tempMin.toString() + " - " + item?.list?.get(0)?.main?.tempMax.toString()
                 text_desc.text = item?.list?.get(0)?.weather?.get(0)?.description.toString()
 
+                var list = item?.list
+                var itemAdp = ItemAdapter(list as List<ListItem>)
 
+                recycler_view_container.apply {
+                    layoutManager = LinearLayoutManager(this@Dashboard)
+                    adapter = itemAdp
+
+                }
 
             }
 

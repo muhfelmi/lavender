@@ -4,7 +4,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_view.view.*
 
-class ItemHolder(view: View, itemView: View) : RecyclerView.ViewHolder(itemView) {
+class ItemHolder(view: View) : RecyclerView.ViewHolder(view) {
     private val dateTime = itemView.day
     private val description = itemView.desc
     private val tempNow = itemView.temp
