@@ -16,16 +16,16 @@
 
 
         <ImageView
-            android:id="@+id/pwkBg"
+            android:id="@+id/bandungBg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha=".40"
+            android:alpha=".60"
             android:layout_marginTop="0dp"
             android:layout_marginBottom="0dp"
             android:layout_weight = "1"
             android:scaleType="centerCrop"
-            android:background="#500000"
-            app:srcCompat="@drawable/pwk"
+            android:background="#100000"
+            app:srcCompat="@drawable/bandung"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
