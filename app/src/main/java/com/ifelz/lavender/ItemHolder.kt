@@ -16,8 +16,8 @@ class ItemHolder(view: View) : RecyclerView.ViewHolder(view) {
         dateTime.text = item.dt?.let { Util.getDayName(it) }
         description.text = item.weather?.get(0)?.description
         tempNow.text = item.main?.temp?.let { Util.setFormatTemperature(it) }
-        tempMinMax.text = item?.main?.tempMin?.let { Util.setFormatTemperature(it) } + " - " + item.main?.tempMax?.let { Util.setFormatTemperature(it) }
-        //item?.weather?.get(0)?.id?.let { Util.getArtResourceForWeatherCondition(it) }?.let { imageIcon.setImageResource(it) }
+        tempMinMax.text = item?.main?.tempMin?.let { Util.setFormatTemperature(it) } + " - " + item?.main?.tempMax?.let { Util.setFormatTemperature(it) }
+
         val weatherId = item.weather?.get(0)?.id
         weatherId?.let { Util.getArtResourceForWeatherCondition(it) }?.let { imageIcon.setImageResource(it) }
     }
