@@ -20,7 +20,7 @@ class Dashboard : AppCompatActivity() {
 
         //API Url Bandung (http://api.openweathermap.org/data/2.5/weather?q=Bandung,ID&appid=7f7f0b0a03827029dbd2715793c876cc)
 
-        //NetworkConfig().getService().getWeathers("purwakarta,ID", "2ce659b9c25fc6fe3a07de4ca71d1dac").enqueue(object : retrofit2.Callback<ResultWeather> {
+        //NetworkConfig().getService().getWeathers("London,uk", "2ce659b9c25fc6fe3a07de4ca71d1dac").enqueue(object : retrofit2.Callback<ResultWeather> {
         NetworkConfig().getService().getWeathers("Bandung,ID", "7f7f0b0a03827029dbd2715793c876cc").enqueue(object : retrofit2.Callback<ResultWeather> {
             override fun onResponse(call: retrofit2.Call<ResultWeather>, response: retrofit2.Response<ResultWeather>) {
                 var item = response.body()
